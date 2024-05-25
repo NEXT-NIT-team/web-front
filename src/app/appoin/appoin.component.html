@@ -1,11 +1,8 @@
 <app-side-bar></app-side-bar>
 
-<div style="position: relative;">
-    <input type="text" placeholder="Search..." class="button.search-button" pInputText [(ngModel)]="value" style="padding-right: 30px;" />
-</div>
 
 <div class="card">
-    <h2>Appointments</h2>
+    <h2 class="last ">Appointments</h2>
     <p-table [value]="oppoints" dataKey="id" [tableStyle]="{ 'min-width': '60rem' }" [expandedRowKeys]="expandedRows" (onRowExpand)="onRowExpand($event)" (onRowCollapse)="onRowCollapse($event)">
         <ng-template pTemplate="header">
             <tr>
